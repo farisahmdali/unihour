@@ -1,0 +1,343 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.wave-container {
+    position: absolute;
+    overflow: hidden;
+}
+
+.wave-container svg path {
+    transform: translate(0%, 10%);
+    animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(0%, 10%);
+    }
+
+    100% {
+        transform: translate(35%, -5.3%);
+    }
+
+
+}
+
+.main-circle {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+}
+
+.main-circle div {
+    aspect-ratio: 1/1;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.344);
+    transform-origin: center center;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle1 {
+    width: 10vw;
+    animation: circle1Anim 5s linear infinite;
+}
+
+@keyframes circle1Anim {
+    0% {
+        width: 10vw;
+        opacity: 1;
+    }
+
+    90% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    100% {
+        width: 10vw;
+        opacity: 1;
+    }
+}
+
+.circle2 {
+    width: 20vw;
+    animation: circle2Anim 5s linear infinite;
+}
+
+@keyframes circle2Anim {
+    0% {
+        width: 20vw;
+        opacity: 1;
+    }
+
+    80% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    90% {
+        width: 10vw;
+    }
+
+    100% {
+        width: 20vw;
+        opacity: 1;
+    }
+}
+
+.circle3 {
+    width: 30vw;
+    animation: circle3Anim 5s linear infinite;
+}
+
+@keyframes circle3Anim {
+    0% {
+        width: 30vw;
+        opacity: 1;
+    }
+
+    70% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    80% {
+        width: 10vw;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 30vw;
+    }
+}
+
+.circle4 {
+    width: 40vw;
+    animation: circle4Anim 5s linear infinite;
+}
+
+@keyframes circle4Anim {
+    0% {
+        width: 40vw;
+        opacity: 1;
+    }
+
+    60% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    70% {
+        width: 10vw;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 40vw;
+    }
+}
+
+.circle5 {
+    width: 50vw;
+    animation: circle5Anim 5s linear infinite;
+}
+
+@keyframes circle5Anim {
+    0% {
+        width: 50vw;
+        opacity: 1;
+    }
+
+    50% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    60% {
+        width: 10vw;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 50vw;
+    }
+}
+
+.circle6 {
+    width: 60vw;
+    animation: circle6Anim 5s linear infinite;
+}
+
+@keyframes circle6Anim {
+    0% {
+        width: 60vw;
+        opacity: 1;
+    }
+
+    40% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    50% {
+        width: 10vw;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 60vw;
+    }
+}
+
+.circle7 {
+    width: 70vw;
+    animation: circle7Anim 5s linear infinite;
+}
+
+@keyframes circle7Anim {
+    0% {
+        width: 70vw;
+        opacity: 1;
+    }
+
+    30% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    40% {
+        width: 10vw;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 70vw;
+    }
+}
+
+.circle8 {
+    width: 80vw;
+    animation: circle8Anim 5s linear infinite;
+}
+
+@keyframes circle8Anim {
+    0% {
+        width: 80vw;
+        opacity: 1;
+    }
+
+    20% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    30% {
+        width: 10vw;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
+
+.circle9 {
+    width: 90vw;
+    animation: circle9Anim 5s linear infinite;
+}
+
+@keyframes circle9Anim {
+    0% {
+        width: 90vw;
+        opacity: 1;
+    }
+
+    10% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    20% {
+        width: 10VW;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 90vw;
+    }
+}
+
+.circle10 {
+    width: 100vw;
+    animation: circle10Anim 5s linear infinite;
+}
+
+@keyframes circle10Anim {
+    0% {
+        width: 100vw;
+        opacity: 0;
+    }
+
+    10% {
+        width: 10vw;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 100vw;
+        opacity: 0;
+    }
+}
+
+.mobile-nav-action:active+.dd{
+    display: flex;
+}
+
+.wave-path {
+    animation: wave2 0.51s linear infinite;
+}
+
+@keyframes wave2 {
+    0% {
+        transform: translate(0%, 0);
+    }
+
+    100% {
+        transform: translate(-17%, 0);
+    }
+
+
+}
