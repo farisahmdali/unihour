@@ -8,8 +8,8 @@
     <title>Uni Hour</title>
 </head>
 
-<body class="bg-[#020151] overflow-x-hidden">
-
+<body class="bg-[#020151] overflow-x-hidden" onload="stopLoading()">
+    <div id="loading" class="bg-[#00000093] h-screen w-screen fixed top-0 left-0 z-50 flex justify-center items-center"><span class="loader"></span></div>
     <!-- header -->
 
     <header class="w-screen pt-5 h-screen overflow-hidden relative  flex flex-col justify-between items-center">
@@ -628,6 +628,10 @@
             // dropdown.style.display = "none"
             dropdown.style.transform = "translateX(100%)"
         }
+    }
+    function stopLoading(){
+        let loader = document.getElementById("loading")
+        loader.style.display = "none"
     }
 </script>
 
