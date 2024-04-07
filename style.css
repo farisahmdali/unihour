@@ -327,7 +327,7 @@
 }
 
 .wave-path {
-    animation: wave2 0.51s linear infinite;
+    animation: wave2 2s linear infinite;
 }
 
 @keyframes wave2 {
