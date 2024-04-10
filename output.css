@@ -1603,6 +1603,10 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .md\:text-\[25px\] {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 1024px) {
